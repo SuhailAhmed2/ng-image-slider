@@ -293,6 +293,7 @@ export class NgImageSliderComponent implements OnInit {
                 setTimeout(() => {
                     _this.currentImageSrc = url;
                     _this.showImage = true;
+                   _this.cdRef.detectChanges();
                 }, 0);
             };
             image.src = url;
